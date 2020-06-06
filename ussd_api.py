@@ -27,6 +27,9 @@ app.register_blueprint(sample.routes)
 app.secret_key = '&west&south'
 app.config['SECRET_KEY'] = 'a98-!_(0)45qurneen'
 
+@app.route('/', methods=['GET'])
+def server_status():
+    return ' Server running!'
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5002, debug=False)
