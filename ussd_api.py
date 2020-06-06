@@ -76,11 +76,5 @@ def json_format(e):
     return json.dumps({"error": "incorrect json object!"}), 400
 
 # get app version
-@app.route('/mobileapp/latest/version')
-@auth.login_required
-def get_app_version():
-    version = appversion.get_version("mobileapp")
-    return content_type_response(version)
-
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5002, debug=False)
