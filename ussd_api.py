@@ -1,6 +1,6 @@
 from flask import Flask, Response, g,stream_with_context, request, session
 from werkzeug.datastructures import Headers
-from werkzeug.exceptions import HTTPException
+# from werkzeug.exceptions import HTTPException
 from io import StringIO
 import json
 import requests
