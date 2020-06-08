@@ -3,7 +3,7 @@ Flask-Cors
 Flask-RESTful
 Flask-WTF
 gunicorn
-# pymongo
+# pymongo\
 flask_jwt_extended
 requests
 datedelta
